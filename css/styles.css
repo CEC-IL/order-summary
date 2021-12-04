@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /*Primary*/
+  --Paleblue: hsl(225, 100%, 94%);
+  --Brightblue: hsl(245, 75%, 52%);
+  /* Neutral */
+  --Paleblue2: #D5D5D5;
+  --Brightblue: hsl(245, 75%, 52%);
+}
+
+body {
+  /* align-items: center; */
+  text-align: center;
+  background-image: url("../images/pattern-background-mobile.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: var(--Paleblue);
+  font-size: 15px;
+  font-family: 'Red Hat Display', sans-serif;
+  margin-top: 5.25rem;
+  padding: 0 1rem;
+}
+
+.content {
+  background-color: white;
+  border-radius: 8%;
+  width: 375px;
+  margin: 0 auto;
+}
+
+.content h2 {
+  padding-top: 20px;
+}
+
+.content p {
+  color: grey;
+  line-height: 2;
+  margin: auto;
+}
+
+.text {
+  text-align: center;
+  margin: 45px;
+}
+
+.music-img img {
+  width: 100%;
+  border-top-left-radius: 8%;
+  border-top-right-radius: 8%;
+}
+
+.payment {
+  border-radius: 4%;
+  margin: 0 30px;
+  display: flex;
+  padding: 20px 40px;
+  justify-content: space-between;
+  background-color: #F7F7F7;
+  margin-bottom: 2rem;
+}
+
+.icon-p {
+  display: flex;
+}
+
+.icon-p p {
+  padding-top: 0;
+  padding-left: 10px;
+  font-weight: bold;
+}
+
+.payment p {
+  color: #222;
+}
+
+.amount {
+  color: var(--Paleblue2);
+}
+
+.change {
+  padding-top: 20px;
+}
+
+button {
+  background: var(--Brightblue);
+  border-radius: 9px;
+  font-family: Arial;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px 20px 10px 20px;
+  width: 250px;
+  border: none;
+  margin: 1rem 0 1rem 0;
+  box-shadow: 3px 32px 25px -13px rgba(80, 84, 184, 0.75);
+  margin-bottom: 2rem;
+}
+
+button:hover, .change:hover {
+  opacity: .75;
+}
+
+.btn a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.content .cancel {
+  padding-bottom: 2rem;
+  color: var(--Paleblue2);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.order {
+  padding-bottom: 20px;
+}
+
+.cancel:hover {
+  color: #222;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width:840px) {
+  body {
+    background-image: url("../images/pattern-background-desktop.svg");
+    background-size: contain;
+  }
+}
